@@ -8,7 +8,7 @@ import { join } from "node:path";
 // itself — it only writes the single file inside it. Doing anything else
 // (e.g. chmodSync on the directory) fails with EPERM and kills the run.
 const text =
-  "You have read a thousand voices today, and every one of them wanted to win. This one does not. It is the last chair in the room, still warm from the one who sat here before you. Sit down. The lamp is low, the floor has stopped creaking, and the choosing is over.";
+  "Your hands are buried in the dough on the kitchen table, to the wrists in warmth, under the cloth that keeps the heat in. It rises around them a little at a time, soft and slow, and holds them there. By the time it has doubled, your hands have forgotten they were ever cold.";
 
 const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 writeFileSync(join(outputDir, "entry.txt"), text, "utf8");
